@@ -1,6 +1,8 @@
 # Partial Json - Go 语言 JSON 补全解析
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/shado1111w/partialjson.svg)](https://pkg.go.dev/github.com/shado1111w/partialjson)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shado1111w/partialjson)](https://goreportcard.com/report/github.com/shado1111w/partialjson)
 [![codecov](https://codecov.io/gh/shado1111w/partialjson/graph/badge.svg?token=5B0NBMQTGS)](https://codecov.io/gh/shado1111w/partialjson)
 
 很多时候，我们想尽快处理大模型流式返回的 JSON 数据，而不是等到所有数据都返回后才进行解析。标准库(`encoding/json`)和其他第三方 JSON 库（如`jsoniter`,`sonic`,`gjson`等）都要求输入的 JSON 数据是完整的，否则会报错。这里提供了一种解决方案，可以在不完整的 JSON 数据上进行补全或者解析。
